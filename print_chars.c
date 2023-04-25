@@ -9,6 +9,7 @@
 int print_c(va_list c)
 {
 	char ch = (char)va_arg(c, int);
+
 	_putchar(ch);
 	return (1);
 }
@@ -34,7 +35,7 @@ int print_s(va_list s)
 }
 
 /**
- * hex_print - Outputs a Character's ASCII value in 
+ * hex_print - Outputs a Character's ASCII value in
  * uppercase hexadecimal to stdout
  * @c: Character to print
  * Return: Number of characters printed (always 2)
